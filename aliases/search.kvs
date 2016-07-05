@@ -1,0 +1,93 @@
+alias(search)
+{
+	# SearchIt - KVIrc alias script © un1versal 2016
+	# License: GPLv2
+	%scriptname = "SearchIt"
+	%version = "v1.0.1"
+	%cpright ="© un1versal 2016 - GPLv2"
+
+	%searchengine="https://duckduckgo.com/?q="
+	%aliasname = "search"
+
+	if("$system.ostype" == "UNIX")
+	{
+		if($0)
+		{
+			run xdg-open %searchengine$0-
+			run open %searchengine$0-
+			break;
+		}
+	}
+	else
+	{
+		if($0)
+			run cmd.exe /c start "" %searchengine$0-
+	}
+
+	switch($0)
+	{
+		case(uninstall):
+		{
+			%scriptname = "SearchIt"
+			if ($window($tr(Alias Editor)) != "0")
+			{
+				dialog.message -b ($tr("%scriptname Uninstaller - KVIrc"), $tr("The <b>%scriptname</b> uninstaller detected some editor window(s) open."<br> \
+				"Do you want the uninstaller to close the open editor window(s) and proceed with uninstallation?"), information, \
+				$tr("&Yes Proceed"), $tr("&No, I have Work to Save"), $tr("&Quit"))
+				{
+					%scriptname = "SearchIt"
+					switch($0)
+					{
+						case("0"):
+						{
+							echo -i=$msgtype(GenericStatus) $tr("The user told $b%scriptname$b's uninstaller to proceed.")
+							timer -s (uninstall,2000)
+							echo -i=$msgtype(GenericWarning) $tr("Closing "$b"$window"$b" Alias Editor window.")
+							window.close -q $window($tr("Alias Editor"))
+							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling $b%scriptname$b...")
+							alias(%aliasname){}
+							echo -i=$msgtype(GenericVerbose) $tr("Uninstall of $balias(%aliasname)$b is now complete!")
+							break;
+						}
+						case("1"):
+						{
+							echo -i=$msgtype(GenericWarning) $tr("The user told $b%scriptname$b uninstaller to exit, so any work in progress can be saved.")
+							break;
+						}
+						default:
+						{
+							echo -i=$msgtype(GenericWarning) $tr("The user has quit $b%scriptname$b's uninstaller.")
+							break;
+						}
+					}
+				}
+			}
+			else
+			{
+				dialog.message -b ($tr("Uninstalling %scriptname - KVIrc"), $tr("Uninstallation for <b>%scriptname</b> will proceed now."), information, \
+				$tr("&Yes Proceed"), $tr("&Quit"))
+				{
+					%scriptname = "SearchIt"
+					switch($0)
+					{
+						case("0"):
+						{
+							echo -i=$msgtype(GenericStatus) $tr("The user told $b%scriptname$b's uninstaller to proceed.")
+							echo -i=$msgtype(GenericStatus) $tr("There were no open editor windows.")
+							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling $balias(%aliasname)$b...")
+							alias(%aliasname){}
+							echo -i=$msgtype(GenericVerbose) $tr("Uninstall of $balias(%aliasname)$b is now complete!")
+							break;
+						}
+						default:
+						{
+							echo -i=$msgtype(GenericWarning) $tr("The user has quit $balias(%aliasname)$b's uninstaller.")
+							break;
+						}
+					}
+				}
+			}
+			break;
+		}
+	}
+}
