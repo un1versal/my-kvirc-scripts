@@ -1,0 +1,28 @@
+event(OnChannelMessage,kveventbotnoise)
+{
+	# kveventbotnoise - KVIrc event script. © un1versal 2016
+	# License: GPLv2
+	# Version: 1.0.1
+	# Source: https://git.io/vKfR1
+
+	if ($context.networkName == "freenode")
+	{
+		%nick = $0
+		%chan = #kvirc
+		%stripcolor = $str.stripcolors($3)
+
+		if($chan.name != %chan)
+			return;
+
+		if($str.match(Not-*,%nick))
+		{
+			if(($str.contains(%stripcolor,"unlabeled",0)) || ($str.contains(%stripcolor,"labeled",0)))
+			{
+				#echo "silenced %nick on labeling/unlabelling issue."
+				halt;
+			}
+		}
+	}
+}
+
+eventctl -eq OnChannelMessage kveventbotnoise
