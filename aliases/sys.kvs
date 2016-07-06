@@ -1,7 +1,7 @@
 alias(sys)
 {
 	# SysInfo alias KVIrc script © un1versal 2016
-	# License: GPLv2
+	# License: GPLv2+ https://git.io/vKLjk
 	# Requires inxi 2.2 or newer
 	# sen (sensors) option requires lm-sensors installed and configured
 	%scriptname = "SysInfo"

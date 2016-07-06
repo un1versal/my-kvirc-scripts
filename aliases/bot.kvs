@@ -1,7 +1,7 @@
 alias(bot)
 {
 	# DoIT for Angelina - KVIrc alias script © un1versal 2016
-	# License: GPLv2
+	# License: GPLv2+ https://git.io/vKLjk
 	%scriptname = "DoIT for Angelina"
 	%version = "v1.2.0"
 	%cpright ="© un1versal 2016 - GPLv2"
