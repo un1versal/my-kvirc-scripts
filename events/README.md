@@ -1,12 +1,33 @@
+```
+                       ▄ •▄  ▌ ▐·▪  ▄▄▄   ▄▄·     ▄▄▄ . ▌ ▐·▄▄▄ . ▐ ▄ ▄▄▄▄▄.▄▄ · 
+                       █▌▄▌▪▪█·█▌██ ▀▄ █·▐█ ▌▪    ▀▄.▀·▪█·█▌▀▄.▀·•█▌▐█•██  ▐█ ▀. 
+                       ▐▀▀▄·▐█▐█•▐█·▐▀▀▄ ██ ▄▄    ▐▀▀▪▄▐█▐█•▐▀▀▪▄▐█▐▐▌ ▐█.▪▄▀▀▀█▄
+                       ▐█.█▌ ███ ▐█▌▐█•█▌▐███▌    ▐█▄▄▌ ███ ▐█▄▄▌██▐█▌ ▐█▌·▐█▄▪▐█
+                       ·▀  ▀. ▀  ▀▀▀.▀  ▀·▀▀▀      ▀▀▀ . ▀   ▀▀▀ ▀▀ █▪ ▀▀▀  ▀▀▀▀ 
+```
+
 ### About
 
-#### :black_small_square: **```OnChannelMessage.kveventbotnoise.kvs**```
+#### :black_small_square: **```OnChannelMessage.kveventbotnoise.kvs```**
 
 KVIrc and many other projects share a Bot service provided by [Notifico](https://github.com/notifico/notifico).  
-This bot outputs messages of what is going on with development into [#KVIrc]{ircs://chat.eu.freenode.net:7070/#KVIrc), this is a valuable service.  
+This bot outputs messages current development related messages into [#KVIrc]{ircs://chat.eu.freenode.net:7070/#KVIrc), this is a valuable service.  
 
 However, if you find that there's too much noise going on, but don't want to fully ignore all output, you can use the provided  
-**OnChannelMessage.eventbotnoise.kvs** which is a KVIrc event to silence the **Bot** output of specific messages types. 
+**```OnChannelMessage.eventbotnoise.kvs```** which is a KVIrc event to silence **Bot** output for specific messages types, based on keyword.
+
+>#### Default Keywords 
+
+:black_small_square: **labeled**  
+:black_small_square: **unlabeled**
+
+>#### Extending Keywords
+
+Its possible to filer any valid keywords
+
+:black_small_square: **edited**  
+:black_small_square: **commented**  
+:black_small_square: ...
 
 ### Installation
 

@@ -8,7 +8,8 @@
 
 ### About
 
-This repository contains a small collection of my own simple scripts in form of events, aliases, actions etc. for ![KVIrc](https://github.com/kvirc/KVIrc)
+This repository contains a small collection of simple scripts in form of events, aliases, actions etc. for ![KVIrc](https://github.com/kvirc/KVIrc)
+
 
 ### Further Information
 

@@ -1,6 +1,14 @@
+```
+                  ▄ •▄  ▌ ▐·▪  ▄▄▄   ▄▄·      ▄▄▄· ▄▄▌  ▪   ▄▄▄· .▄▄ · ▄▄▄ ..▄▄ · 
+                  █▌▄▌▪▪█·█▌██ ▀▄ █·▐█ ▌▪    ▐█ ▀█ ██•  ██ ▐█ ▀█ ▐█ ▀. ▀▄.▀·▐█ ▀. 
+                  ▐▀▀▄·▐█▐█•▐█·▐▀▀▄ ██ ▄▄    ▄█▀▀█ ██▪  ▐█·▄█▀▀█ ▄▀▀▀█▄▐▀▀▪▄▄▀▀▀█▄
+                  ▐█.█▌ ███ ▐█▌▐█•█▌▐███▌    ▐█ ▪▐▌▐█▌▐▌▐█▌▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌▐█▄▪▐█
+                  ·▀  ▀. ▀  ▀▀▀.▀  ▀·▀▀▀      ▀  ▀ .▀▀▀ ▀▀▀ ▀  ▀  ▀▀▀▀  ▀▀▀  ▀▀▀▀ 
+```
+
 ### About
 
-#### :black_small_square: **bot.kvs**
+#### :black_small_square: **```bot.kvs```**
 
 An alias script named *DoiT for Angelina*, Angelina is a community member provided [Cbot (written in C#)](https://github.com/AndrioCelos/CBot) to aid with support in [#KVIrc]{ircs://chat.eu.freenode.net:7070/#KVIrc).  
 It's a **```/bot <cmd>```** alias, to **add**, **remove** and **change** **data** or **triggers** into the bots database. this is really a memory-aid for myself as the commands are simple enough but in time one forgets,
