@@ -3,18 +3,7 @@ alias(search)
 	# SearchIt - KVIrc alias script © un1versal 2016
 	# License: GPLv2+ https://git.io/vKLjk
 	%scriptname = "SearchIt"
-	%version = "v1.0.5"
-	%cpright ="© un1versal 2016 - GPLv2"
-	%slink = https://git.io/vKq7h
-	%S = "$b":"$b"
-
-	%searchengine="https://duckduckgo.com/?q="
-	%aliasname = "search"
-
-	# SearchIt - KVIrc alias script © un1versal 2016
-	# License: GPLv2+ https://git.io/vKLjk
-	%scriptname = "SearchIt"
-	%version = "v1.1.2"
+	%version = "v1.1.5"
 	%cpright ="© un1versal 2016 - GPLv2"
 	%slink = https://git.io/vKq7h
 	%S = "$b":"$b"
