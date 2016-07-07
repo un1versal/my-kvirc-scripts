@@ -10,7 +10,6 @@
 
 This repository contains a small collection of simple scripts in form of events, aliases, actions etc. for ![KVIrc](https://github.com/kvirc/KVIrc)
 
-
 ### Further Information
 
 You will find each directory contains further information on the scripts and how to install/uninstall etc.

@@ -1,23 +1,23 @@
 ```
-                  ▄ •▄  ▌ ▐·▪  ▄▄▄   ▄▄·      ▄▄▄· ▄▄▌  ▪   ▄▄▄· .▄▄ · ▄▄▄ ..▄▄ · 
-                  █▌▄▌▪▪█·█▌██ ▀▄ █·▐█ ▌▪    ▐█ ▀█ ██•  ██ ▐█ ▀█ ▐█ ▀. ▀▄.▀·▐█ ▀. 
-                  ▐▀▀▄·▐█▐█•▐█·▐▀▀▄ ██ ▄▄    ▄█▀▀█ ██▪  ▐█·▄█▀▀█ ▄▀▀▀█▄▐▀▀▪▄▄▀▀▀█▄
-                  ▐█.█▌ ███ ▐█▌▐█•█▌▐███▌    ▐█ ▪▐▌▐█▌▐▌▐█▌▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌▐█▄▪▐█
-                  ·▀  ▀. ▀  ▀▀▀.▀  ▀·▀▀▀      ▀  ▀ .▀▀▀ ▀▀▀ ▀  ▀  ▀▀▀▀  ▀▀▀  ▀▀▀▀ 
+                    ▄ •▄  ▌ ▐·▪  ▄▄▄   ▄▄·      ▄▄▄· ▄▄▌  ▪   ▄▄▄· .▄▄ · ▄▄▄ ..▄▄ · 
+                    █▌▄▌▪▪█·█▌██ ▀▄ █·▐█ ▌▪    ▐█ ▀█ ██•  ██ ▐█ ▀█ ▐█ ▀. ▀▄.▀·▐█ ▀. 
+                    ▐▀▀▄·▐█▐█•▐█·▐▀▀▄ ██ ▄▄    ▄█▀▀█ ██▪  ▐█·▄█▀▀█ ▄▀▀▀█▄▐▀▀▪▄▄▀▀▀█▄
+                    ▐█.█▌ ███ ▐█▌▐█•█▌▐███▌    ▐█ ▪▐▌▐█▌▐▌▐█▌▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌▐█▄▪▐█
+                    ·▀  ▀. ▀  ▀▀▀.▀  ▀·▀▀▀      ▀  ▀ .▀▀▀ ▀▀▀ ▀  ▀  ▀▀▀▀  ▀▀▀  ▀▀▀▀ 
 ```
 
 ### About
 
-#### :black_small_square: **```bot.kvs```**
+#### :black_small_square: **```bot.kvs```** a.k.a *DoiT for Angelina*
 
-An alias script named *DoiT for Angelina*, Angelina is a community member provided [Cbot (written in C#)](https://github.com/AndrioCelos/CBot) to aid with support in [#KVIrc]{ircs://chat.eu.freenode.net:7070/#KVIrc).  
+Angelina is a resource provided community member provided [Cbot (written in C#)](https://github.com/AndrioCelos/CBot) to aid with support in [#KVIrc]{ircs://chat.eu.freenode.net:7070/#KVIrc).  
 It's a **```/bot <cmd>```** alias, to **add**, **remove** and **change** **data** or **triggers** into the bots database. this is really a memory-aid for myself as the commands are simple enough but in time one forgets,
 
 For script usage, type ```/bot``` and press ```[Enter]``` to get a list of supported switches/syntax with explanations on what each action does.
 
-#### :black_small_square: **```sys.kvs```**
+#### :black_small_square: **```sys.kvs```** a.k.a. *SysInfo*
 
-An alias script named *SysInfo*, and as the name may indicate, it provides a simple way to output system information about various hardware components in your machine and your OS.  
+As the alias name may suggest, it provides a simple way to output system information about various hardware components in your machine and your OS.  
 **SysInfo** script requires [inxi](https://github.com/smxi/inxi) and [lm-sensors](https://github.com/groeck/lm-sensors/issues/3). At this time *SysInfo* is only available for UNIX-like / Linux systems.
 
 For script usage, type **```/sys```** and press **```[Enter]```** to get a list of supported switches with explanations on what each action does.
@@ -25,9 +25,9 @@ For script usage, type **```/sys```** and press **```[Enter]```** to get a list 
 >###### Requires inxi 2.2 or newer  
 >###### sen (sensors) option requires lm-sensors installed and configured (not required otherwise)
 
-#### :black_small_square: **```search.kvs```**
+#### :black_small_square: **```search.kvs```** a.k.a. *SearchiT*
 
-This alias script is named *SearchiT*, it facilitates searches for terms or anything else at all via Duck Duck Go SSL search engine. It opens a browser window with your results.  
+This alias script it facilitates searches for terms or anything else at all via Duck Duck Go SSL search engine. It opens a browser window with your results.  
 This was a request by another KVIrc user on IRC at [#KVIrc]{ircs://chat.eu.freenode.net:7070/#KVIrc). 
 
 For script usage, type **```/search```** and press **```[Enter]```** to get a list of supported switches/syntax with explanations on what each action does.

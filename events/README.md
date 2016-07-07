@@ -14,7 +14,7 @@ KVIrc and many other projects share a Bot service provided by [Notifico](https:/
 This bot outputs messages current development related messages into [#KVIrc]{ircs://chat.eu.freenode.net:7070/#KVIrc), this is a valuable service.  
 
 However, if you find that there's too much noise going on, but don't want to fully ignore all output, you can use the provided  
-**```OnChannelMessage.eventbotnoise.kvs```** which is a KVIrc event to silence **Bot** output for specific messages types, based on keyword.
+**```OnChannelMessage.kveventbotnoise.kvs```** which is a KVIrc event to silence **Bot** output for specific messages types, based on keyword.
 
 >#### Default Keywords 
 
@@ -48,7 +48,7 @@ Its possible to filer any valid keywords
 
 ### Uninstallation
 
-#### **```OnChannelMessage.eventbotnoise.kvs```** has no automatic uninstall method at this time.  
+#### **```OnChannelMessage.kveventbotnoise.kvs```** has no automatic uninstall method at this time.  
 
 >##### Manual uninstallation:
 
