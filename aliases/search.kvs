@@ -99,7 +99,7 @@ alias(search)
 			echo \n
 			echo "     "/%aliasname <uninstall> %S $tr("This uninstalls the alias(%aliasname) from KVIrc.")
 			echo \n
-			echo %name %version - %cpright
+			echo -i=$msgtype(GenericVerbose) %scriptname %version - %cpright\n
 			break;
 		}
 		default:
