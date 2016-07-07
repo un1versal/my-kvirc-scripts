@@ -5,8 +5,8 @@ alias(bot)
 	%scriptname = "DoIT for Angelina"
 	%version = "v1.2.0"
 	%cpright ="© un1versal 2016 - GPLv2"
-	%slink = "https://git.io/vKfR1"
-	%clink = "https://github.com/AndrioCelos/CBot"
+	%slink = https://git.io/vKq7h
+	%clink = https://github.com/AndrioCelos/CBot
 	%S = "$b":"$b"
 	%aliasname = "bot"
 
@@ -128,9 +128,9 @@ alias(bot)
 			echo "      "/%aliasname <trg> <key> <key> %S $tr("Entries are triggered with $b!key$b in addition of default $b? key$b")
 			echo "      "/%aliasname <chg> <key> <line nr#> [data] %S $tr("Changes an existing line nr#, this also adds new lines to existing entries.")
 			echo "      "/%aliasname <sch> %S $tr("Outputs a link to share the repository and download location for Cbot's and %scriptname alias with other IRC users.")
-			echo " "
+			echo \n
 			echo "      "/%aliasname <uninstall> %S $tr("This uninstalls the "$b"alias(%aliasname)$b" from KVIrc.")
-			echo " "
+			echo \n
 			echo -i=$msgtype(GenericVerbose) %scriptname %version - %cpright\n
 			halt;
 		}

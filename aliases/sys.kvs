@@ -7,7 +7,7 @@ alias(sys)
 	%scriptname = "SysInfo"
 	%version = "v1.2.0"
 	%cpright = "© un1versal 2016 - GPLv2"
-	%link = "https://git.io/vKfR1"
+	%slink = "https://git.io/vKfR1"
 	%S = "$b":"$b"
 	%aliasname = "sys"
 
@@ -88,12 +88,12 @@ alias(sys)
 			%nick = $1
 			if(%nick != "")
 			{
-				say $tr("%nick: have a look at %scriptname %version %link")
+				say $tr("%nick: have a look at %scriptname %version %slink")
 				break;
 			}
 			else
 			{
-				say $tr("Why dont you have a look at %scriptname %version %link")
+				say $tr("Why dont you have a look at %scriptname %version %slink")
 				break;
 			}
 		}

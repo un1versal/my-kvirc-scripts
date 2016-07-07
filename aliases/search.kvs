@@ -3,30 +3,32 @@ alias(search)
 	# SearchIt - KVIrc alias script © un1versal 2016
 	# License: GPLv2+ https://git.io/vKLjk
 	%scriptname = "SearchIt"
-	%version = "v1.0.1"
+	%version = "v1.0.5"
 	%cpright ="© un1versal 2016 - GPLv2"
+	%slink = https://git.io/vKq7h
+	%S = "$b":"$b"
 
 	%searchengine="https://duckduckgo.com/?q="
 	%aliasname = "search"
 
-	if("$system.ostype" == "UNIX")
-	{
-		if($0)
-		{
-			run xdg-open %searchengine$0-
-			run open %searchengine$0-
-			break;
-		}
-	}
-	else
-	{
-		if($0)
-			run cmd.exe /c start "" %searchengine$0-
-	}
+	# SearchIt - KVIrc alias script © un1versal 2016
+	# License: GPLv2+ https://git.io/vKLjk
+	%scriptname = "SearchIt"
+	%version = "v1.1.2"
+	%cpright ="© un1versal 2016 - GPLv2"
+	%slink = https://git.io/vKq7h
+	%S = "$b":"$b"
+	%aliasname = "search"
 
 	switch($0)
 	{
-		case(uninstall):
+		case(share):
+		{
+			say $tr("Why dont you have a look at %scriptname %version %slink")
+			break;
+
+		}
+		case("uninstall"):
 		{
 			%scriptname = "SearchIt"
 			if ($window($tr(Alias Editor)) != "0")
@@ -86,6 +88,34 @@ alias(search)
 						}
 					}
 				}
+			}
+			break;
+		}
+		case(""):
+		{
+			echo $tr("Usage:")
+			echo "     "/%aliasname <search term> %S $tr("Opens your desired search term on DuckDuckGo via SSL")
+			echo "     "/%aliasname <share> %S $tr("Output a link to share %scriptname with other KVIrc users.")
+			echo \n
+			echo "     "/%aliasname <uninstall> %S $tr("This uninstalls the alias(%aliasname) from KVIrc.")
+			echo \n
+			echo %name %version - %cpright
+			break;
+		}
+		default:
+		{
+			%searchengine="https://duckduckgo.com/?q="
+
+			if("$system.ostype" == "UNIX")
+			{
+				run xdg-open %searchengine$0-
+				run open %searchengine$0-
+				break;
+			}
+			else
+			{
+				run cmd.exe /c start "" %searchengine$0-
+				break;
 			}
 			break;
 		}
