@@ -5,7 +5,7 @@ alias(sys)
 	# Requires inxi 2.2 or newer
 	# sen (sensors) option requires lm-sensors installed and configured
 	%scriptname = "SysInfo"
-	%version = "v1.2.0"
+	%version = "v1.2.1"
 	%cpright = "© un1versal 2016 - GPLv2"
 	%slink = "https://git.io/vKfR1"
 	%S = "$b":"$b"
@@ -100,6 +100,7 @@ alias(sys)
 		case(uninstall):
 		{
 			%scriptname = "SysInfo"
+			%aliasname = "sys"
 			if ($window($tr(Alias Editor)) != "0")
 			{
 				dialog.message -b ($tr("%scriptname Uninstaller - KVIrc"), $tr("The <b>%scriptname</b> uninstaller detected some editor window(s) open."<br> \
@@ -107,6 +108,7 @@ alias(sys)
 				$tr("&Yes Proceed"), $tr("&No, I have Work to Save"), $tr("&Quit"))
 				{
 					%scriptname = "SysInfo"
+					%aliasname = "sys"
 					switch($0)
 					{
 						case("0"):
@@ -117,7 +119,7 @@ alias(sys)
 							window.close -q $window($tr("Alias Editor"))
 							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling $b%scriptname$b...")
 							alias(%aliasname){}
-							echo -i=$msgtype(GenericVerbose) $tr("Uninstall of $balias(%aliasname)$b is now complete!")
+							echo -i=$msgtype(GenericVerbose) $tr("Uninstall of "$b"alias(%aliasname)$b is now complete!")
 							break;
 						}
 						case("1"):
@@ -139,20 +141,21 @@ alias(sys)
 				$tr("&Yes Proceed"), $tr("&Quit"))
 				{
 					%scriptname = "SysInfo Pack"
+					%aliasname = "sys"
 					switch($0)
 					{
 						case("0"):
 						{
 							echo -i=$msgtype(GenericStatus) $tr("The user told $b%scriptname$b's uninstaller to proceed.")
 							echo -i=$msgtype(GenericStatus) $tr("There were no open editor windows.")
-							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling $balias(%aliasname)$b...")
+							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling "$b"alias(%aliasname)$b...")
 							alias(%aliasname){}
-							echo -i=$msgtype(GenericVerbose) $tr("Uninstall of $balias(%aliasname)$b is now complete!")
+							echo -i=$msgtype(GenericVerbose) $tr("Uninstall of "$b"alias(%aliasname)$b is now complete!")
 							break;
 						}
 						default:
 						{
-							echo -i=$msgtype(GenericWarning) $tr("The user has quit $balias(%aliasname)$b's uninstaller.")
+							echo -i=$msgtype(GenericWarning) $tr("The user has quit "$b"alias(%aliasname)$b's uninstaller.")
 							break;
 						}
 					}
