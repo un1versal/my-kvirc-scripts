@@ -3,11 +3,11 @@ alias(bot)
 	# DoIT for Angelina - KVIrc alias script © un1versal 2016
 	# License: GPLv2+ https://git.io/vKLjk
 	%scriptname = "DoIT for Angelina"
-	%version = "v1.2.1"
+	%version = "v1.2.2"
 	%cpright ="© un1versal 2016 - GPLv2"
 	%slink = https://git.io/vKq7h
 	%clink = https://github.com/AndrioCelos/CBot
-	%S = "$b":"$b"
+	%s = "$b":"$b"
 	%aliasname = "bot"
 
 	%addkey = $1
@@ -126,13 +126,13 @@ alias(bot)
 		case(""):
 		{
 			echo $tr("Usage:")
-			echo "      "/%aliasname <add> <key> [data] %S $tr("Add a "$b"key$b and the respective$b data$b text entry.")
-			echo "      "/%aliasname <rem | del> <key> %S $tr("Delete a existing$b key$b and any associated triggers with it.")
-			echo "      "/%aliasname <trg> <key> <key> %S $tr("Entries are triggered with $b!key$b in addition of default $b? key$b")
-			echo "      "/%aliasname <chg> <key> <line nr#> [data] %S $tr("Changes an existing line nr#, this also adds new lines to existing entries.")
-			echo "      "/%aliasname <sch> %S $tr("Outputs a link to share the repository and download location for Cbot's and %scriptname alias with other IRC users.")
+			echo "      "/%aliasname <add> <key> [data] %s $tr("Add a "$b"key$b and the respective$b data$b text entry.")
+			echo "      "/%aliasname <rem | del> <key> %s $tr("Delete a existing$b key$b and any associated triggers with it.")
+			echo "      "/%aliasname <trg> <key> <key> %s $tr("Entries are triggered with $b!key$b in addition of default $b? key$b")
+			echo "      "/%aliasname <chg> <key> <line nr#> [data] %s $tr("Changes an existing line nr#, this also adds new lines to existing entries.")
+			echo "      "/%aliasname <sch> %s $tr("Outputs a link to share the repository and download location for Cbot's and %scriptname alias with other IRC users.")
 			echo \n
-			echo "      "/%aliasname <uninstall> %S $tr("This uninstalls the "$b"alias(%aliasname)$b" from KVIrc.")
+			echo "      "/%aliasname <uninstall> %s $tr("This uninstalls the "$b"alias(%aliasname)$b" from KVIrc.")
 			echo \n
 			echo -i=$msgtype(GenericVerbose) %scriptname %version - %cpright\n
 			halt;

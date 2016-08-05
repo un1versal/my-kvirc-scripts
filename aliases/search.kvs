@@ -3,10 +3,10 @@ alias(search)
 	# SearchIt - KVIrc alias script © un1versal 2016
 	# License: GPLv2+ https://git.io/vKLjk
 	%scriptname = "SearchIt"
-	%version = "v1.1.6"
+	%version = "v1.1.7"
 	%cpright ="© un1versal 2016 - GPLv2"
 	%slink = https://git.io/vKq7h
-	%S = "$b":"$b"
+	%s = "$b":"$b"
 	%aliasname = "search"
 
 	switch($0)
@@ -86,10 +86,10 @@ alias(search)
 		case(""):
 		{
 			echo $tr("Usage:")
-			echo "     "/%aliasname <search term> %S $tr("Opens your desired search term on DuckDuckGo via SSL")
-			echo "     "/%aliasname <share> %S $tr("Output a link to share %scriptname with other KVIrc users.")
+			echo "     "/%aliasname <search term> %s $tr("Opens your desired search term on DuckDuckGo via SSL")
+			echo "     "/%aliasname <share> %s $tr("Output a link to share %scriptname with other KVIrc users.")
 			echo \n
-			echo "     "/%aliasname <uninstall> %S $tr("This uninstalls the alias(%aliasname) from KVIrc.")
+			echo "     "/%aliasname <uninstall> %s $tr("This uninstalls the alias(%aliasname) from KVIrc.")
 			echo \n
 			echo -i=$msgtype(GenericVerbose) %scriptname %version - %cpright\n
 			break;
