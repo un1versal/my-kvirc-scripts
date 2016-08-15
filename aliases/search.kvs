@@ -3,7 +3,7 @@ alias(search)
 	# SearchIt - KVIrc alias script © un1versal 2016
 	# License: GPLv2+ https://git.io/vKLjk
 	%scriptname = "SearchIt"
-	%version = "v1.1.7"
+	%version = "v1.1.8"
 	%cpright ="© un1versal 2016 - GPLv2"
 	%slink = https://git.io/vKq7h
 	%s = "$b":"$b"
@@ -20,7 +20,6 @@ alias(search)
 		case("uninstall"):
 		{
 			%scriptname = "SearchIt"
-			%aliasname = "search"
 			if ($window($tr(Alias Editor)) != "0")
 			{
 				dialog.message -b ($tr("%scriptname Uninstaller - KVIrc"), $tr("The <b>%scriptname</b> uninstaller detected some editor window(s) open."<br> \
@@ -34,8 +33,8 @@ alias(search)
 						case("0"):
 						{
 							echo -i=$msgtype(GenericStatus) $tr("The user told $b%scriptname$b's uninstaller to proceed.")
+							echo -i=$msgtype(GenericWarning) $tr("Closing Alias Editor window.")
 							timer -s (uninstall,2000)
-							echo -i=$msgtype(GenericWarning) $tr("Closing "$b"$window"$b" Alias Editor window.")
 							window.close -q $window($tr("Alias Editor"))
 							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling $b%scriptname$b...")
 							alias(%aliasname){}
@@ -68,14 +67,14 @@ alias(search)
 						{
 							echo -i=$msgtype(GenericStatus) $tr("The user told $b%scriptname$b's uninstaller to proceed.")
 							echo -i=$msgtype(GenericStatus) $tr("There were no open editor windows.")
-							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling $balias(%aliasname)$b...")
+							echo -i=$msgtype(GenericVerbose) $tr("Now uninstalling "$b"alias(%aliasname)$b...")
 							alias(%aliasname){}
 							echo -i=$msgtype(GenericVerbose) $tr("Uninstall of "$b"alias(%aliasname)$b is now complete!")
 							break;
 						}
 						default:
 						{
-							echo -i=$msgtype(GenericWarning) $tr("The user has quit $balias(%aliasname)$b's uninstaller.")
+							echo -i=$msgtype(GenericWarning) $tr("The user has quit "$b"alias(%aliasname)$b's uninstaller.")
 							break;
 						}
 					}
